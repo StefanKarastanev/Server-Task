@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 
-	//"serveroperations/calculate"
 	"serveroperations/mainpage"
 	"serveroperations/modify"
 )
@@ -75,7 +74,6 @@ func main() {
 
 	http.HandleFunc("/", mainpage.Mainpage)
 	http.HandleFunc("/modify", modify.Modify)
-	//http.HandleFunc("/calculate", calculate.Calculate)
 
 	http.ListenAndServe(":8282", nil)
 	sum := 0
